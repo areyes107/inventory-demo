@@ -1,25 +1,22 @@
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Inter from "../public/static/fonts/Inter.ttf";
-import { ThemeProvider, CssBaseline, createTheme, Box } from "@mui/material";
 import RootComponent from "./components/RootComponent";
 import RootPage from "./components/RootPage";
-import DataTable from "./test/DataTable";
-import Hello from "./test/Hello";
 // import "../app.css";
 import {
   Route,
+  RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-  RouterProvider,
 } from "react-router-dom";
-import Home from "./components/bodyComponents/home/Home";
-import Inventory from "./components/bodyComponents/inventory/Inventory";
 import Customer from "./components/bodyComponents/customer/Customer";
-import Revenue from "./components/bodyComponents/revenue/Revenue";
 import Growth from "./components/bodyComponents/growth/Growth";
-import Report from "./components/bodyComponents/report/Report";
-import Setting from "./components/bodyComponents/Settings/Setting";
+import Home from "./components/bodyComponents/Home/Home";
+import Inventory from "./components/bodyComponents/inventory/Inventory";
 import Order from "./components/bodyComponents/order/Order";
-import OrderModal from "./components/bodyComponents/order/OrderModal";
+import Report from "./components/bodyComponents/report/Report";
+import Revenue from "./components/bodyComponents/revenue/Revenue";
+import Setting from "./components/bodyComponents/Settings/Setting";
 
 function App() {
   const theme = createTheme({
